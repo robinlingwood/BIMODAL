@@ -14,7 +14,7 @@ The following methods are implemented:
 
 ## Table of Contents
 1. [Prerequisites](#Prerequisites)
-2. [Using the Code](#Using the code)
+2. [Using the Code](#Using_the_code)
     1. [Sampling from a pre-trained model](#Sample)
     2. [Training a model on your data](#Training) 
     3. [Fine-tuning a model on your data](#Finetuning) 
@@ -45,7 +45,7 @@ conda activate brnn
 
 Your code should now be ready to use!
 
-# Using the code <a name="Using the code"></a>
+# Using the code <a name="Using_the_code"></a>
 ## Sampling from a pre-trained model <a name="Sample"></a>
 
 In this repository, we provide you with 22 pre-trained models you can use for sampling (stored in [evaluation/](evaluation/)).
