@@ -133,7 +133,7 @@ t = Trainer(experiment_name = 'BIMODAL_fixed_512')
 t.cross_validation(stor_dir = '../evaluation/', restart = False)
 ```
 
-- Single run: 1/n_folds of data used for validation
+- Single run: 1/*n_folds* of data used for validation
 ```
 from trainer import Trainer
 
