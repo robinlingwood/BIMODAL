@@ -6,7 +6,7 @@ You can use this repository for the generation of SMILES with bidirectional
 recurrent neural networks (RNNs). In addition to the methods' code, several pre-trained models for each approach are included.
 
 The following methods are implemented:
-* **Bidirectional Molecule Design by Alternate Learning** (BIMODAL), specifically implemented for SMILES generation – see [Grisoni *et al.* 2020](https://pubs.acs.org/doi/10.1021/acs.jcim.9b00943).
+* **Bidirectional Molecule Design by Alternate Learning** (BIMODAL), designed for SMILES generation – see [Grisoni *et al.* 2020](https://pubs.acs.org/doi/10.1021/acs.jcim.9b00943).
 * **Synchronous Forward Backward RNN** (FB-RNN), based on [Mou *et al.* 2016](https://arxiv.org/pdf/1512.06612.pdf).
 * **Neural Autoregressive Distribution Estimator** (NADE), re-adapted for SMILES generation from [Berglund *et al.* 2015](http://papers.nips.cc/paper/5651-bidirectional-recurrent-neural-networks-as-generative-models.pdf).
 * **Forward RNN**, *i.e.*, unidirectional RNN for SMILES generation. 
