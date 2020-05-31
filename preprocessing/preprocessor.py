@@ -187,8 +187,10 @@ class Preprocessor:
         :param  token:  token to insert
         :return:
         """
+        data = []
         for i, s in enumerate(self._data):
-            self._data[i] = token + s
+            data.append(token + s)
+        self._data = data
         return
 
     def add_ending(self, token='E'):
@@ -196,8 +198,10 @@ class Preprocessor:
         :param  token:  token to insert
         :return:
         """
+        data = []
         for i, s in enumerate(self._data):
-            self._data[i] = s + token
+            data.append(s + token)
+        self._data = data
         return
 
     def add_middle(self, token='G'):
@@ -205,9 +209,11 @@ class Preprocessor:
         :param  token:  token to insert
         :return:
         """
+        data = []
         for i, s in enumerate(self._data):
             mid = len(s) // 2
-            self._data[i] = s[:mid] + token + s[mid:]
+            data.append(s[:mid] + token + s[mid:])
+        self._data = data
         return
 
     def add_token_random_padding(self, start_token='G', pad_token='A', aug=5, l=0):
@@ -282,8 +288,10 @@ class Preprocessor:
             l = len(max(self._data, key=len))
 
         # Padding of all strings in array
+        data = []
         for i, s in enumerate(self._data):
-            self._data[i] = s.ljust(l, token)
+            data.append(s.ljust(l, token))
+        self._data = data
         return l
 
     def padding_left_right(self, token='A', l=0):
@@ -296,8 +304,10 @@ class Preprocessor:
             l = len(max(self._data, key=len))
 
         # Padding of all strings in array
+        data = []
         for i, s in enumerate(self._data):
-            self._data[i] = s.center(l, token)
+            data.append(s.center(l, token))
+        self._data = data
         return l
 
     def save_data(self, name='data.csv'):
