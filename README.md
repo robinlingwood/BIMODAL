@@ -2,6 +2,8 @@
 
 This is the supporting code for: Grisoni F., Moret M., Lingwood R., Schneider G., "Bidirectional Molecule Generation with Recurrent Neural Networks". *Journal of Chemical Information and Modeling* (2020). Available [here](https://pubs.acs.org/doi/10.1021/acs.jcim.9b00943).
 
+Please note that up-to-date versions of this code are found [here](https://github.com/ETHmodlab).
+
 You can use this repository for the generation of SMILES with bidirectional
 recurrent neural networks (RNNs). In addition to the methods' code, several pre-trained models for each approach are included.
 
